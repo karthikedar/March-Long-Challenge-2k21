@@ -1,0 +1,22 @@
+Sol
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    int t,k,g;
+    cin>>t;
+    while(t--)
+    {
+          cin>>k;
+          g=gcd(100,k);
+          cout<<100/g<<endl;
+    } 
+}
+int gcd(int a, int b)
+{
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
+     
+}
