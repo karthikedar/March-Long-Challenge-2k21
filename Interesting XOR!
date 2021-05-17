@@ -1,0 +1,27 @@
+SOL:
+
+#include <bits/stdc++.h>
+#include<cmath>
+using namespace std;
+
+int main() {
+	// your code goes here
+	long t;
+	long long n;
+	long l;
+	long long a;
+	long long b;
+	cin>>t;
+	while(t--)
+	{
+	    cin>>n;
+	    l=(long)log2(n) ;
+	    //cout<<l<<endl;
+	    a = (long long)(pow(2,l)) -1;
+	    b = a^n;
+	    cout<<a*b<<endl;
+	    
+	    
+	}
+	return 0;
+}
